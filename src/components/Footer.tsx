@@ -1,8 +1,11 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '@/i18n';
 
 const Footer = () => {
+  const { translations } = useLanguage();
+
   return (
     <footer className="bg-ion-dark text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -12,7 +15,7 @@ const Footer = () => {
               <span className="text-2xl font-bold text-white font-heading">ION DATA</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Empowering CEOs and entrepreneurs by reclaiming their most valuable asset—time—through intelligent AI solutions.
+              {translations.footer.description}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -31,22 +34,22 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-4 font-heading">Company</h3>
+            <h3 className="text-xl font-semibold mb-4 font-heading">{translations.footer.company}</h3>
             <ul className="space-y-2">
-              <li><Link to="#about" className="text-gray-300 hover:text-white transition-colors">About</Link></li>
-              <li><Link to="#services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
-              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
-              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
+              <li><Link to="#about" className="text-gray-300 hover:text-white transition-colors">{translations.footer.links.about}</Link></li>
+              <li><Link to="#services" className="text-gray-300 hover:text-white transition-colors">{translations.footer.links.services}</Link></li>
+              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">{translations.footer.links.contact}</Link></li>
+              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">{translations.footer.links.careers}</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-4 font-heading">Resources</h3>
+            <h3 className="text-xl font-semibold mb-4 font-heading">{translations.footer.resources}</h3>
             <ul className="space-y-2">
-              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">AI Insights</Link></li>
-              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">Case Studies</Link></li>
-              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">Webinars</Link></li>
-              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
+              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">{translations.footer.links.insights}</Link></li>
+              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">{translations.footer.links.caseStudies}</Link></li>
+              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">{translations.footer.links.webinars}</Link></li>
+              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">{translations.footer.links.faq}</Link></li>
             </ul>
           </div>
         </div>
@@ -54,12 +57,12 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-gray-400">
-              &copy; {new Date().getFullYear()} ION Data. All rights reserved.
+              {translations.footer.copyright}
             </p>
           </div>
           <div className="flex space-x-6">
-            <Link to="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
-            <Link to="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
+            <Link to="#" className="text-gray-400 hover:text-white transition-colors">{translations.footer.privacy}</Link>
+            <Link to="#" className="text-gray-400 hover:text-white transition-colors">{translations.footer.terms}</Link>
           </div>
         </div>
       </div>

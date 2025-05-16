@@ -1,7 +1,10 @@
 
 import React from 'react';
+import { useLanguage } from '@/i18n';
 
 const Testimonials = () => {
+  const { translations } = useLanguage();
+
   const testimonials = [
     {
       quote: "ION Data's AI solutions transformed how I manage my time. I've reclaimed at least 15 hours weekly for strategic initiatives rather than operational tasks.",
@@ -28,10 +31,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-3xl md:text-4xl font-bold text-white font-heading mb-4">
-            What Executives Say
+            {translations.testimonials.title}
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            CEOs and founders who have partnered with ION Data share their experiences.
+            {translations.testimonials.subtitle}
           </p>
         </div>
 
