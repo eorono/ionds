@@ -33,7 +33,11 @@ const Navbar = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold font-heading text-ion-blue">ION DATA</span>
+              <img 
+                src="/lovable-uploads/f54c16cc-b5cc-44af-a885-e85f79d84832.png" 
+                alt="ION Logo" 
+                className="h-10"
+              />
             </div>
           </div>
           
