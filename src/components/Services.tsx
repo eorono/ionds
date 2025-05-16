@@ -18,7 +18,7 @@ const Services = () => {
     {
       key: 'training',
       icon: <BookOpen className="h-10 w-10 text-white" />,
-      color: "bg-gradient-to-br from-[#9b87f5] to-[#a89df8]"
+      color: "bg-gradient-to-br from-[#7ED957] to-[#37CA37]"
     },
     {
       key: 'custom',
