@@ -123,3 +123,18 @@ html {
     linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
 }
+
+/* Add purple gradient background */
+.bg-purple-gradient {
+  background: linear-gradient(90deg, #9b87f5 0%, #D946EF 100%);
+}
+
+/* Add dark purple gradient background */
+.bg-dark-purple-gradient {
+  background: linear-gradient(90deg, #1A1F2C 0%, #403E43 100%);
+}
+
+/* Add light purple gradient background */
+.bg-light-purple-gradient {
+  background: linear-gradient(90deg, #F1F0FB 0%, #E5DEFF 100%);
+}

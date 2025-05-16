@@ -56,7 +56,7 @@ const Navbar = () => {
             >
               {translations.nav.about}
             </a>
-            <Button className="bg-ion-teal hover:bg-ion-blue text-white transition-colors">
+            <Button className="bg-ion-teal hover:bg-ion-accent text-white transition-colors">
               {translations.nav.scheduleCta}
             </Button>
             <button 
@@ -98,7 +98,7 @@ const Navbar = () => {
               {translations.nav.about}
             </a>
             <div className="px-3 py-2">
-              <Button className="w-full bg-ion-teal hover:bg-ion-blue text-white transition-colors">
+              <Button className="w-full bg-ion-teal hover:bg-ion-accent text-white transition-colors">
                 {translations.nav.scheduleCta}
               </Button>
             </div>

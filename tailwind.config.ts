@@ -63,13 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// ION Data custom colors
+				// ION Data custom colors - updated to match reference website
 				ion: {
-					'blue': '#0B3954',
-					'teal': '#087E8B',
-					'light': '#F0F3F5',
-					'accent': '#FF5A5F',
-					'dark': '#1C2B35'
+					'blue': '#1A1F2C', // dark purple/blue from reference
+					'teal': '#9b87f5', // primary purple from reference
+					'light': '#F1F0FB', // soft gray from reference
+					'accent': '#D946EF', // magenta pink from reference
+					'dark': '#403E43' // charcoal gray from reference
 				}
 			},
 			fontFamily: {

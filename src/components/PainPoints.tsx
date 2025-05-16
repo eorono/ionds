@@ -9,13 +9,13 @@ const PainPoints = () => {
   const { translations } = useLanguage();
   
   const painPointsIcons = {
-    timeScarcity: <Clock className="h-10 w-10 text-ion-accent" />,
-    aiFears: <AlertTriangle className="h-10 w-10 text-ion-accent" />,
-    personalization: <Target className="h-10 w-10 text-ion-accent" />,
-    strategic: <Zap className="h-10 w-10 text-ion-accent" />,
-    knowledge: <Lightbulb className="h-10 w-10 text-ion-accent" />,
-    vendor: <Search className="h-10 w-10 text-ion-accent" />,
-    roi: <ChartPie className="h-10 w-10 text-ion-accent" />
+    timeScarcity: <Clock className="h-10 w-10 text-ion-teal" />,
+    aiFears: <AlertTriangle className="h-10 w-10 text-ion-teal" />,
+    personalization: <Target className="h-10 w-10 text-ion-teal" />,
+    strategic: <Zap className="h-10 w-10 text-ion-teal" />,
+    knowledge: <Lightbulb className="h-10 w-10 text-ion-teal" />,
+    vendor: <Search className="h-10 w-10 text-ion-teal" />,
+    roi: <ChartPie className="h-10 w-10 text-ion-teal" />
   };
   
   const painPoints: Array<{ key: PainPointKey, icon: React.ReactNode }> = [
