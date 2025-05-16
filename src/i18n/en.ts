@@ -10,7 +10,8 @@ export const en = {
     title: "Reclaim Your Time.\nReimagine Your Company With AI.",
     subtitle: "ION Data empowers CEOs with personalized AI solutions and expert mentorship to drive unprecedented efficiency and growth.",
     cta: "Schedule Free Consultation",
-    exploreCta: "Explore Services"
+    exploreCta: "Explore Services",
+    innovationTag: "AI Innovation Partner"
   },
   stats: {
     timeSaved: "Time Saved on Repetitive Tasks",

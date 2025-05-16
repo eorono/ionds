@@ -4,10 +4,17 @@ import { Button } from '@/components/ui/button';
 import { BookOpen, Code, Cog } from 'lucide-react';
 import { useLanguage } from '@/i18n';
 
+type ServiceKey = 'training' | 'custom' | 'fullService';
+
 const Services = () => {
   const { translations } = useLanguage();
   
-  const services = [
+  const services: Array<{
+    key: ServiceKey;
+    icon: React.ReactNode;
+    color: string;
+    featured?: boolean;
+  }> = [
     {
       key: 'training',
       icon: <BookOpen className="h-10 w-10 text-white" />,
@@ -40,7 +47,9 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => {
-            const serviceTranslation = translations.services[service.key as keyof typeof translations.services];
+            const serviceTranslation = translations.services[service.key];
+            if (typeof serviceTranslation === 'string') return null; // Skip if not an object
+            
             return (
               <div 
                 key={index} 

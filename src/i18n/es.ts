@@ -10,7 +10,8 @@ export const es = {
     title: "Recupera Tu Tiempo.\nReimagina Tu Empresa Con IA.",
     subtitle: "ION Data potencia a CEOs con soluciones personalizadas de IA y mentoría experta para impulsar una eficiencia y crecimiento sin precedentes.",
     cta: "Agendar Consulta Gratuita",
-    exploreCta: "Explorar Servicios"
+    exploreCta: "Explorar Servicios",
+    innovationTag: "Socio de Innovación en IA"
   },
   stats: {
     timeSaved: "Tiempo Ahorrado en Tareas Repetitivas",

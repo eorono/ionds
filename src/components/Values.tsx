@@ -3,6 +3,8 @@ import React from 'react';
 import { Lightbulb, Shield, Award, UserPlus } from 'lucide-react';
 import { useLanguage } from '@/i18n';
 
+type ValueKey = 'innovation' | 'excellence' | 'integrity' | 'empowerment';
+
 const Values = () => {
   const { translations } = useLanguage();
 
@@ -13,7 +15,7 @@ const Values = () => {
     empowerment: <UserPlus className="h-8 w-8 text-ion-teal" />
   };
 
-  const values = [
+  const values: Array<{ key: ValueKey, icon: React.ReactNode }> = [
     { key: 'innovation', icon: valuesIcons.innovation },
     { key: 'excellence', icon: valuesIcons.excellence },
     { key: 'integrity', icon: valuesIcons.integrity },
@@ -34,7 +36,9 @@ const Values = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => {
-            const valueTranslation = translations.values[value.key as keyof typeof translations.values];
+            const valueTranslation = translations.values[value.key];
+            if (typeof valueTranslation === 'string') return null; // Skip if not an object
+            
             return (
               <div 
                 key={index} 
