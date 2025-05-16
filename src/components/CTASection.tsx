@@ -22,7 +22,7 @@ const CTASection = () => {
                 <Button className="bg-ion-teal text-white hover:bg-ion-accent transition-colors text-lg font-semibold px-8 py-6">
                   {translations.cta.primaryCta}
                 </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10 transition-colors text-lg font-semibold px-8 py-6">
+                <Button variant="outline" className="bg-black border-black text-ion-teal hover:bg-black/80 transition-colors text-lg font-semibold px-8 py-6">
                   {translations.cta.secondaryCta}
                 </Button>
               </div>

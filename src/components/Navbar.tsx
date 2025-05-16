@@ -33,26 +33,26 @@ const Navbar = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <span className={`text-2xl font-bold font-heading ${isScrolled ? 'text-ion-blue' : 'text-white'}`}>ION DATA</span>
+              <span className="text-2xl font-bold font-heading text-ion-blue">ION DATA</span>
             </div>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               to="/" 
-              className={`${isScrolled ? 'text-ion-dark' : 'text-white'} hover:text-ion-teal transition-colors font-medium`}
+              className="text-ion-blue hover:text-ion-teal transition-colors font-medium"
             >
               {translations.nav.home}
             </Link>
             <a 
               href="#services" 
-              className={`${isScrolled ? 'text-ion-dark' : 'text-white'} hover:text-ion-teal transition-colors font-medium`}
+              className="text-ion-blue hover:text-ion-teal transition-colors font-medium"
             >
               {translations.nav.services}
             </a>
             <a 
               href="#about" 
-              className={`${isScrolled ? 'text-ion-dark' : 'text-white'} hover:text-ion-teal transition-colors font-medium`}
+              className="text-ion-blue hover:text-ion-teal transition-colors font-medium"
             >
               {translations.nav.about}
             </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
             </Button>
             <button 
               onClick={toggleLanguage} 
-              className={`flex items-center ${isScrolled ? 'text-ion-dark' : 'text-white'} hover:text-ion-teal transition-colors`}
+              className="flex items-center text-ion-blue hover:text-ion-teal transition-colors"
               aria-label={language === 'en' ? 'Switch to Spanish' : 'Cambiar a Inglés'}
             >
               <Globe size={20} className="mr-1" />
@@ -72,12 +72,12 @@ const Navbar = () => {
           <div className="md:hidden flex items-center space-x-4">
             <button 
               onClick={toggleLanguage} 
-              className={`flex items-center ${isScrolled ? 'text-ion-dark' : 'text-white'} hover:text-ion-teal transition-colors`}
+              className="flex items-center text-ion-blue hover:text-ion-teal transition-colors"
               aria-label={language === 'en' ? 'Switch to Spanish' : 'Cambiar a Inglés'}
             >
               <Globe size={20} />
             </button>
-            <button onClick={toggleMenu} className={`${isScrolled ? 'text-ion-dark' : 'text-white'} hover:text-ion-teal focus:outline-none`}>
+            <button onClick={toggleMenu} className="text-ion-blue hover:text-ion-teal focus:outline-none">
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>

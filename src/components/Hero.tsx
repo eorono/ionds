@@ -26,7 +26,7 @@ const Hero = () => {
               <Button className="bg-ion-teal hover:bg-ion-accent text-white transition-colors text-lg font-semibold px-8 py-6">
                 {translations.hero.cta}
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 transition-colors text-lg font-semibold px-8 py-6">
+              <Button variant="outline" className="bg-black border-black text-ion-teal hover:bg-black/80 transition-colors text-lg font-semibold px-8 py-6">
                 {translations.hero.exploreCta}
               </Button>
             </div>
