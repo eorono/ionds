@@ -71,11 +71,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-ion-teal/20 blur-3xl rounded-full transform -translate-y-4 translate-x-4"></div>
               <div className="relative bg-black/60 backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-2xl">
                 {/* Imagen de personas usando el servicio */}
-                <img 
-                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-                  alt="Equipo trabajando con ION DATA" 
-                  className="w-full h-auto rounded-xl mb-6 shadow-lg"
-                />
+               
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-black/50 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                     <div className="text-4xl font-bold text-white mb-2">85%</div>
