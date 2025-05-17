@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Hero = () => {
   const { translations } = useLanguage();
@@ -34,8 +35,30 @@ const Hero = () => {
             <p className="text-xl md:text-2xl text-white/90 mb-8">
               {translations.hero.subtitle}
             </p>
+            
+            {/* Testimonios rápidos con avatares para humanizar */}
+            <div className="flex items-center mb-8">
+              <div className="flex -space-x-2 overflow-hidden mr-4">
+                <Avatar className="border-2 border-white w-10 h-10">
+                  <AvatarImage src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" />
+                  <AvatarFallback>CG</AvatarFallback>
+                </Avatar>
+                <Avatar className="border-2 border-white w-10 h-10">
+                  <AvatarImage src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" />
+                  <AvatarFallback>JD</AvatarFallback>
+                </Avatar>
+                <Avatar className="border-2 border-white w-10 h-10">
+                  <AvatarImage src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" />
+                  <AvatarFallback>MR</AvatarFallback>
+                </Avatar>
+              </div>
+              <p className="text-white/90 text-sm font-medium">
+                <span className="text-ion-teal">+1,500</span> ejecutivos confían en nosotros
+              </p>
+            </div>
+            
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button className="bg-ion-teal hover:bg-ion-accent text-black transition-colors text-lg font-semibold px-8 py-6">
+              <Button className="bg-black hover:bg-black/80 text-ion-teal transition-colors text-lg font-semibold px-8 py-6">
                 {translations.hero.cta}
               </Button>
               <Button variant="outline" className="bg-black border-black text-ion-teal hover:bg-black/80 transition-colors text-lg font-semibold px-8 py-6">
@@ -47,6 +70,12 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-ion-teal/20 blur-3xl rounded-full transform -translate-y-4 translate-x-4"></div>
               <div className="relative bg-black/60 backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-2xl">
+                {/* Imagen de personas usando el servicio */}
+                <img 
+                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                  alt="Equipo trabajando con ION DATA" 
+                  className="w-full h-auto rounded-xl mb-6 shadow-lg"
+                />
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-black/50 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                     <div className="text-4xl font-bold text-white mb-2">85%</div>
